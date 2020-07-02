@@ -15,7 +15,9 @@ class TagSerializer(serializers.ModelSerializer):
 
 
 class NoteSerializer(serializers.ModelSerializer):
+    tag = serializers.StringRelatedField(many=True)
+    user = serializers.StringRelatedField()
     class Meta:
         model = Note
         fields = ('creation_date', 'end_date', 'note',
-                  'is_task', 'attachment', 'note_type')
+                  'is_task', 'user', 'tag', 'attachment', 'note_type')

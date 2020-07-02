@@ -12,5 +12,5 @@ class TagViewSet(viewsets.ModelViewSet):
   serializer_class = TagSerializer
 
 class UserViewSet(viewsets.ModelViewSet):
-  queryset = Note.objects.all().order_by('name')
+  queryset = User.objects.all().order_by('name')
   serializer_class = UserSerializer
