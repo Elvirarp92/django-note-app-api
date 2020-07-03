@@ -10,7 +10,7 @@ A RESTful API for CRUD operations on a DB for a note-making app.
 
 * A package manager such as [pipenv](https://pipenv.pypa.io/en/latest/)
 
-Installation instructions provided below will be for, specifically, pipenv.
+Installation instructions provided below will be for, specifically, pipenv. By default, the CORS middleware is coded to expect requests from `http://localhost:3000`
 
 ### Installation
 
