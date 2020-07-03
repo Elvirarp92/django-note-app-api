@@ -1,6 +1,6 @@
 # Django Note App API
 
-A RESTful API for CRUD operations on a DB for a note-making app.
+A RESTful API for CRUD operations on a DB for a note-making app. (WIP)
 
 ## Getting started
 
@@ -58,6 +58,9 @@ By default, this will launch the development server in `http://127.0.0.1:8000/`
 
 ## Roadmap
 
+* Correct serializers
+* File upload handling
+* Handling cross references in note creation
 * Filter functions: by tags, by type, by user
 
 ## Built with
