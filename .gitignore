@@ -156,5 +156,8 @@ dmypy.json
 # Ignore all local history of files
 .history
 
+#upload testing
+uploads/
+
 # End of https://www.toptal.com/developers/gitignore/api/visualstudiocode,django
 
