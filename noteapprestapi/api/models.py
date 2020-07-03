@@ -39,9 +39,9 @@ class Note(models.Model):
     end_date = models.DateTimeField()
     note = models.TextField()
     is_task = models.NullBooleanField(default=False)
-    user = models.ForeignKey('User', on_delete=models.SET_NULL, null=True)
-    tag = models.ManyToManyField('tag')
-    attachment = models.FileField(upload_to='uploads/')
+    user = models.ForeignKey('User', on_delete=models.SET_NULL, null=True, blank=True)
+    tag = models.ManyToManyField('tag', blank=True)
+    attachment = models.FileField(upload_to='uploads/', blank=True)
     note_type = models.CharField(
         max_length=4, choices=TYPE_CHOICES, default=NEW)
 
